@@ -30,7 +30,7 @@
 
     // favorite('pizza')
 
-    let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    // let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
     // O(1)
     // const head = arr => {
@@ -58,15 +58,86 @@
     // listTwice(nums)
 
     // O(n^2)
-    const listNest = arr => {
-      arr.forEach(elem => {
-        arr.forEach(elem2 => {
-          console.log(elem, elem2)
-        })
-      })
-    }
+    // const listNest = arr => {
+    //   arr.forEach(elem => {
+    //     arr.forEach(elem2 => {
+    //       console.log(elem, elem2)
+    //     })
+    //   })
+    // }
 
-    listNest(nums)
+    // listNest(nums)
+
+    // class Stack {
+    //   constructor(container = []) {
+    //     this.container = container
+    //   }
+
+    //   add(el) {
+    //     return this.container.push(el)
+    //   }
+
+    //   remove() {
+    //     return this.container.pop()
+    //   }
+    // }
+
+    // const stack = new Stack([1, 2, 3, 4])
+
+    // class Queue {
+    //   constructor(container = []) {
+    //     this.container = container
+    //   }
+
+    //   add(el) {
+    //     return this.container.push(el)
+    //   }
+
+    //   remove() {
+    //     return this.container.shift()
+    //   }
+    // }
+
+    // const queue = new Queue([1, 2, 3, 4, 5])
+
+    let nums = [543, 908, 531, 577, 509, 82, 369, 831, 822, 27, 395, 178, 210, 301, 954, 517, 176, 837, 526, 69, 527, 555, 950, 346, 341, 991, 41, 704, 854, 172, 669, 481, 362, 110, 364, 578, 76, 816, 682, 441, 285, 829, 81, 724, 46, 109, 428, 246, 389, 486, 188, 397, 760, 248, 407, 493, 184, 18, 627, 964, 322, 207, 203, 737, 235, 802, 552, 892, 44, 146, 155, 809, 824, 908, 174, 157, 160, 23, 539, 380, 938, 474, 106, 551, 591, 312, 395, 563, 937, 456, 32, 855, 918, 596, 119, 597, 55, 951, 619, 146]
+
+    // const selectionSort = arr => {
+    //   for (let i = 0; i < arr.length; i++) {
+    //     let small = i
+    //     for (let j = i + 1; j < arr.length; j++) {
+    //       if (arr[small] > arr[j]) {
+    //         small = j
+    //       }
+    //     }
+    //     let temp = arr[i]
+    //     arr[i] = arr[small]
+    //     arr[small] = temp
+    //   }
+    //   return arr
+    // }
+
+    // console.log(selectionSort(nums))
+
+    // const bubbleSort = arr => {
+    //   let sorted = false
+
+    //   while (!sorted) {
+    //     sorted = true
+
+    //     for (let i = 0; i < arr.length; i++) {
+    //       if (arr[i] > arr[i + 1]) {
+    //         let temp = arr[i]
+    //         arr[i] = arr[i + 1]
+    //         arr[i + 1] = temp
+    //         sorted = false
+    //       }
+    //     }
+    //   }
+    //   return arr
+    // }
+
+    // console.log(bubbleSort(nums))
   </script>
 </body>
 
