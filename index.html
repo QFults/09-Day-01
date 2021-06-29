@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+
+    // O(2) -> O(1)
+    // const adder = (a, b) => {
+    //     return a + b
+    // }
+
+    // console.log(adder(1, 2))
+
+    // O(2) -> O(1)
+    // const favorite = food => {
+    //   if (food === 'pizza') {
+    //     console.log('That is my favorite too!')
+    //   } else {
+    //     console.log('That is not my favorite.')
+    //   }
+    // }
+
+    // favorite('pizza')
+
+    let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+    // O(1)
+    // const head = arr => {
+    //   return arr[0]
+    // }
+
+    // console.log(head(nums))
+
+    // O(3n) -> O(n)
+    // const list = arr => {
+    //   arr.forEach(elem => {
+    //     let x = 5 + 3
+    //     console.log(elem, x)
+    //   })
+    // }
+
+    // list(nums)
+
+    // O(n)
+    // const listTwice = arr => {
+    //   arr.forEach(elem => console.log(elem))
+    //   arr.forEach(elem => console.log(elem))
+    // }
+
+    // listTwice(nums)
+
+    // O(n^2)
+    const listNest = arr => {
+      arr.forEach(elem => {
+        arr.forEach(elem2 => {
+          console.log(elem, elem2)
+        })
+      })
+    }
+
+    listNest(nums)
+  </script>
+</body>
+
+</html>
